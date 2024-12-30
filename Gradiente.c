@@ -17,7 +17,7 @@ void gradiente(double (*f)(double, double), double x, double y, double grad[])
     grad[1] = (f(x, y + h) - f(x, y)) / h;
 }
 
-// Armijo
+// Regra de Armijo
 double armijo(double (*f)(double, double), double x, double y, double grad[], double alpha, double beta)
 {
     double f_curr = f(x, y), f_new;
