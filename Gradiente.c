@@ -13,8 +13,8 @@ double funcao(double x, double y)
 void gradiente(double (*f)(double, double), double x, double y, double grad[])
 {
     double h = 1e-6;
-    grad[0] = (f(x + h, y) - f(x, y)) / h; // derivada em x
-    grad[1] = (f(x, y + h) - f(x, y)) / h; // derivada em y
+    grad[0] = (f(x + h, y) - f(x, y)) / h;
+    grad[1] = (f(x, y + h) - f(x, y)) / h;
 }
 
 // Armijo
